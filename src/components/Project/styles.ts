@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${(props) => props.theme.borderColor};
   padding: 16px;
 `
 
 export const LinkButton = styled.a`
   display: inline-block;
-  color: #fff;
+  color: ${(props) => props.theme.bgColor};
   font-size: 14px;
-  background-color: #4476bf;
+  background-color: ${(props) => props.theme.buttonBgColor};
   text-decoration: none;
   padding: 8px;
   margin-top: 24px;
